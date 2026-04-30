@@ -67,6 +67,12 @@ export default function Quiz({ onSubmit }) {
       <button onClick={handleSubmit} disabled={Object.keys(answers).length !== questions.length}>
         Submit
       </button>
+      <p>
+        Results: {Results}
+      </p>
+      <button onClick={Quiz}>
+        Retry Quiz
+      </button>
     </div>
   );
 }
