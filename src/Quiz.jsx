@@ -1,3 +1,5 @@
+import check_answer from 'view_quiz_score.py';
+import display_score from 'view_quiz_score.py';
 import { useState } from "react";
 
 const questions = [
@@ -68,7 +70,7 @@ export default function Quiz({ onSubmit }) {
         Submit
       </button>
       <p>
-        Results: {Results}
+        Results: display_score(check_answers(name, value, setAnswers),4)
       </p>
       <button onClick={Quiz}>
         Retry Quiz
